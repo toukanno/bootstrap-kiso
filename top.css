@@ -1,0 +1,115 @@
+/* FontAwesomeの時計アイコンをオレンジ色に指定 */
+.clock {
+  color: orange;
+  float: left;
+  padding: 7px 10px 0px 5px;
+}
+/* 時計アイコンと日付けを横並びにするので、floatを指定 */
+mt-3 {
+  float: left;
+}
+/* h2の装飾 */
+.title_main {
+  border-left: solid black 4px;
+  border-bottom: solid black 2px;
+  padding-left: 5px;
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* 背景色を灰色に指定 */
+.gray_box {
+  margin: auto 0;
+  background-color: lightgray;
+}
+/* テキストリンクのデフォルトの色をdarkslategrayに指定、
+訪問済みテキストリンクの色をdarkslategrayに指定、
+マウスオーバー(hober)した際に、「#ff0000」に変化するように指定。 */
+.gray_box.pohto {
+  margin-top: -5px;
+}
+.gray_box.photo a:link {
+  color: darkslategrey;
+}
+.gray_box.photo a:visited {
+  color: darkslategrey;
+}
+.gray_box.photo a:hover {
+  color: #ff0000;
+}
+
+/* メイン部分(右カラム)の作成 */
+
+/* メイン部分(右カラム)の作成 */
+/* 右カラムh3の装飾 */
+.title_sidebar {
+  border-bottom: dotted black 2px;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 20px;
+  
+}
+
+/* 右カラムのリストのスタイルを指定 */
+
+.sidebar_li{
+  list-style:none;
+  margin-left:-20px;
+  margin-bottom:-15px;
+  
+}
+/* リストのテキストリンクのデフォルトの色を「darkslategray」に指定、
+訪問済みのテキストリンクの色を「darkslategrey」に指定,
+マウスオーバー(hover)した際に、「#ff0000」に変化するように指定。 */
+.sidebar_li a:link {
+  color:darkslategray;
+}
+.sidebar_li a:visited {
+  color:darkslategray;
+}
+.sidebar_li a:hover {
+  color:#ff0000;
+}
+/* PC表示"pc"のclassがついた画像が表示される */
+.pc{
+  display:block !important;
+}
+/* display:block;を指定することで、該当要素をブロック要素化する。
+つまり、通常表示(パソコン表示）の時は,「pc」classは表示するという意味。 */
+.margin{
+  margin:-5px 0px 0px -30px;
+}
+/* display:none;を指定することで、該当要素を非表示にする。
+つまり、通常表示(パソコン表示)の時は、「sp」classは非表示にするという意味 */
+.sp{
+  display:none !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+/* 「@maedia only screen and(max-width: 768px)」は、
+レスポンシブデザインを作成する際に頻繁に使用される方法です。
+768ｐｘと記述することで、768px未満の場合は、すべて後に続くCSSが適応されるゥうあこがれるゥ
+という意味。 */
+@media only screen and(max-width:768px){
+  /* スマホ表示(768px未満)の時は、「pc」classは非表示するという意味。 */
+  .pc{
+    display:none !important;
+  }
+  /* スマホ表示(768px未満)の時は、「sp」classは非表示するという意味。*/
+  .sp{
+    display:block !important;
+  }
+  .margin{
+    margin:0;
+  }
+  .padding-0{
+    padding:0;
+  }
+}
+
+footer{
+  background-color:black;
+  text-align: center;
+  line-height:60px;
+  margin-top:30px;
+}
